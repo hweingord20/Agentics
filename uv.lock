@@ -37,7 +37,7 @@ source = { editable = "." }
 dependencies = [
     { name = "aiosqlite" },
     { name = "crewai", extra = ["tools"] },
-    { name = "crewai-tools", extra = ["mcp"] },
+    { name = "crewai-tools", extra = ["mcp", "serpapi"] },
     { name = "datasets" },
     { name = "ddgs" },
     { name = "google" },
@@ -79,7 +79,7 @@ docs = [
 requires-dist = [
     { name = "aiosqlite", specifier = ">=0.21.0" },
     { name = "crewai", extras = ["tools"] },
-    { name = "crewai-tools", extras = ["mcp"] },
+    { name = "crewai-tools", extras = ["mcp", "serpapi"] },
     { name = "datasets", specifier = ">=4.0.0,<5.0.0" },
     { name = "ddgs" },
     { name = "google", specifier = ">=3.0.0,<4.0.0" },
@@ -778,6 +778,9 @@ wheels = [
 mcp = [
     { name = "mcp" },
     { name = "mcpadapt" },
+]
+serpapi = [
+    { name = "serpapi" },
 ]
 
 [[package]]
@@ -4691,6 +4694,18 @@ dependencies = [
 sdist = { url = "https://files.pythonhosted.org/packages/46/b8/1b99379b730bc403d8e9ddc2db56f8ac9ce743734b44a1dbeebb900490d4/sentence_transformers-5.1.0.tar.gz", hash = "sha256:70c7630697cc1c64ffca328d6e8688430ebd134b3c2df03dc07cb3a016b04739", size = 370745, upload-time = "2025-08-06T13:48:55.226Z" }
 wheels = [
     { url = "https://files.pythonhosted.org/packages/6d/70/2b5b76e98191ec3b8b0d1dde52d00ddcc3806799149a9ce987b0d2d31015/sentence_transformers-5.1.0-py3-none-any.whl", hash = "sha256:fc803929f6a3ce82e2b2c06e0efed7a36de535c633d5ce55efac0b710ea5643e", size = 483377, upload-time = "2025-08-06T13:48:53.627Z" },
+]
+
+[[package]]
+name = "serpapi"
+version = "0.1.5"
+source = { registry = "https://pypi.org/simple" }
+dependencies = [
+    { name = "requests" },
+]
+sdist = { url = "https://files.pythonhosted.org/packages/f0/fa/3fd8809287f3977a3e752bb88610e918d49cb1038b14f4bc51e13e594197/serpapi-0.1.5.tar.gz", hash = "sha256:b9707ed54750fdd2f62dc3a17c6a3fb7fa421dc37902fd65b2263c0ac765a1a5", size = 14191, upload-time = "2023-11-01T14:00:43.602Z" }
+wheels = [
+    { url = "https://files.pythonhosted.org/packages/df/6a/21deade04100d64844e494353a5d65e7971fbdfddf78eb1f248423593ad0/serpapi-0.1.5-py2.py3-none-any.whl", hash = "sha256:6467b6adec1231059f754ccaa952b229efeaa8b9cae6e71f879703ec9e5bb3d1", size = 10966, upload-time = "2023-11-01T14:00:38.885Z" },
 ]
 
 [[package]]

@@ -83,7 +83,7 @@ with (
         verbose=True,
     )
     result = crew.kickoff(
-        inputs={"question": """Make a literature report on Large Language Models"""}
+        inputs={"search_query": """fall knee-high boots"""}
     )
 
     (
